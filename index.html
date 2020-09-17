@@ -15,29 +15,38 @@
 			<h1>Sourdough Calculator</h1>
 		</header>
 		<main>
+			<p>
+				Like a lot of people, I made a sourdough starter during COVID-19. When I
+				went to bake with it, I ran into recipes that called for starters of
+				different stiffness, or flour/water ratio. This app caluclates the
+				amount of flour, water, and starter to use in a recipe depending on your
+				starter's hydration level and what the recipe calls for.
+			</p>
 			<table>
 				<th></th>
 				<th>Original Recipe</th>
-				<th>Revised Recipe</th>
+				<th>Your Recipe</th>
 				<tr>
 					<td>Starter Hydration</td>
-					<td><input type="number" /></td>
-					<td><input type="number" /></td>
+					<td>
+						<input type="number" size="5" min="0" max="100" value="80" />
+					</td>
+					<td><input type="number" size="5" min="0" max="100" value="60" /></td>
 				</tr>
 				<tr>
 					<td>Starter Mass</td>
-					<td><input type="number" /></td>
-					<td><input type="number" /></td>
+					<td><input type="number" size="5" min="0" value="360" /></td>
+					<td><div class="starter out">320</div></td>
 				</tr>
 				<tr>
 					<td>Flour Mass</td>
-					<td><input type="number" /></td>
-					<td><input type="number" /></td>
+					<td><input type="number" size="5" min="0" value="800" /></td>
+					<td><div class="flour out">800</div></td>
 				</tr>
 				<tr>
 					<td>Water Mass</td>
-					<td><input type="number" /></td>
-					<td><input type="number" /></td>
+					<td><input type="number" size="5" min="0" value="620" /></td>
+					<td><div class="water out">660</div></td>
 				</tr>
 			</table>
 		</main>
