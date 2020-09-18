@@ -25,27 +25,35 @@
 			<table>
 				<th></th>
 				<th>Original Recipe</th>
+				<th></th>
 				<th>Your Recipe</th>
 				<tr>
 					<td>Starter Hydration</td>
-					<td>
-						<input type="number" size="5" min="0" max="100" value="80" />
+					<td class="percent">
+						<input type="number" size="2" min="0" max="100" value="80" />
 					</td>
-					<td><input type="number" size="5" min="0" max="100" value="60" /></td>
+					<td><label for="">%</label></td>
+					<td>
+						<input type="number" size="2" min="0" max="100" value="60" />
+					</td>
+					<td><label for="">%</label></td>
 				</tr>
 				<tr>
 					<td>Starter Mass</td>
-					<td><input type="number" size="5" min="0" value="360" /></td>
+					<td><input type="number" size="2" min="0" value="360" /></td>
+					<td></td>
 					<td><div class="starter out">320</div></td>
 				</tr>
 				<tr>
 					<td>Flour Mass</td>
-					<td><input type="number" size="5" min="0" value="800" /></td>
+					<td><input type="number" size="2" min="0" value="800" /></td>
+					<td></td>
 					<td><div class="flour out">800</div></td>
 				</tr>
 				<tr>
 					<td>Water Mass</td>
-					<td><input type="number" size="5" min="0" value="620" /></td>
+					<td><input type="number" size="2" min="0" value="620" /></td>
+					<td></td>
 					<td><div class="water out">660</div></td>
 				</tr>
 			</table>
