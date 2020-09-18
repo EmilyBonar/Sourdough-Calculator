@@ -20,6 +20,7 @@ main {
 	margin: auto;
 	padding: 0 20px;
 	width: 40%;
+	min-width: 440px;
 	background: white;
 	border-radius: 10px;
 	min-height: 50vh;
