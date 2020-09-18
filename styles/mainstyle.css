@@ -99,3 +99,17 @@ a:visited:not(.badge) {
 	height: 30px;
 	border-radius: 2px;
 }
+
+.nav {
+	display: flex;
+	justify-content: center;
+}
+
+.badge {
+	background-color: white;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+	text-decoration: none;
+	color: black;
+}
