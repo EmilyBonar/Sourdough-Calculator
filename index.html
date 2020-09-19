@@ -42,7 +42,12 @@
 				<th></th>
 				<th>Your Recipe</th>
 				<tr>
-					<td>Starter Hydration</td>
+					<td
+						class="info min"
+						title="Hydration is based on how you feed your starter. It's defined by (Water Added)/(Flour Added)"
+					>
+						Starter Hydration
+					</td>
 					<td class="percent">
 						<input type="number" size="2" min="0" max="100" value="80" />
 					</td>
@@ -53,19 +58,25 @@
 					<td><label for="">%</label></td>
 				</tr>
 				<tr>
-					<td>Starter Mass</td>
+					<td class="info min" title="How much starter the recipe calls for">
+						Starter Mass
+					</td>
 					<td><input type="number" size="2" min="0" value="360" /></td>
 					<td></td>
 					<td><div class="starter out">320</div></td>
 				</tr>
 				<tr>
-					<td>Flour Mass</td>
+					<td class="info min" title="How much flour the recipe calls for">
+						Flour Mass
+					</td>
 					<td><input type="number" size="2" min="0" value="800" /></td>
 					<td></td>
 					<td><div class="flour out">800</div></td>
 				</tr>
 				<tr>
-					<td>Water Mass</td>
+					<td class="info min" title="How much water the recipe calls for">
+						Water Mass
+					</td>
 					<td><input type="number" size="2" min="0" value="620" /></td>
 					<td></td>
 					<td><div class="water out">660</div></td>
