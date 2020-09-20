@@ -36,52 +36,68 @@
 				amount of flour, water, and starter to use in a recipe depending on your
 				starter's hydration level and what the recipe calls for.
 			</p>
-			<table>
-				<th></th>
-				<th>Original Recipe</th>
-				<th></th>
-				<th>Your Recipe</th>
-				<tr>
-					<td
-						class="info min"
-						title="Hydration is based on how you feed your starter. It's defined by (Water Added)/(Flour Added)"
-					>
-						Starter Hydration
-					</td>
-					<td class="percent">
-						<input type="number" size="2" min="0" max="100" value="80" />
-					</td>
-					<td><label for="">%</label></td>
-					<td>
-						<input type="number" size="2" min="0" max="100" value="60" />
-					</td>
-					<td><label for="">%</label></td>
-				</tr>
-				<tr>
-					<td class="info min" title="How much starter the recipe calls for">
-						Starter Mass
-					</td>
-					<td><input type="number" size="2" min="0" value="360" /></td>
-					<td></td>
-					<td><div class="starter out">320</div></td>
-				</tr>
-				<tr>
-					<td class="info min" title="How much flour the recipe calls for">
-						Flour Mass
-					</td>
-					<td><input type="number" size="2" min="0" value="800" /></td>
-					<td></td>
-					<td><div class="flour out">800</div></td>
-				</tr>
-				<tr>
-					<td class="info min" title="How much water the recipe calls for">
-						Water Mass
-					</td>
-					<td><input type="number" size="2" min="0" value="620" /></td>
-					<td></td>
-					<td><div class="water out">660</div></td>
-				</tr>
-			</table>
+			<form action="">
+				<table>
+					<th></th>
+					<th>Original Recipe</th>
+					<th></th>
+					<th>Your Recipe</th>
+					<tr>
+						<td
+							class="info min"
+							title="Hydration is based on how you feed your starter. It's defined by (Water Added)/(Flour Added)"
+						>
+							Starter Hydration
+						</td>
+						<td class="percent">
+							<input
+								id="percent"
+								type="number"
+								size="2"
+								min="0"
+								max="100"
+								value="80"
+							/>
+						</td>
+						<td><label for="percent">%</label></td>
+						<td>
+							<input
+								id="percent"
+								type="number"
+								size="2"
+								min="0"
+								max="100"
+								value="60"
+							/>
+						</td>
+						<td><label for="percent">%</label></td>
+					</tr>
+					<tr>
+						<td class="info min" title="How much starter the recipe calls for">
+							Starter Mass
+						</td>
+						<td><input type="number" size="2" min="0" value="360" /></td>
+						<td></td>
+						<td><output>320</output></td>
+					</tr>
+					<tr>
+						<td class="info min" title="How much flour the recipe calls for">
+							Flour Mass
+						</td>
+						<td><input type="number" size="2" min="0" value="800" /></td>
+						<td></td>
+						<td><output>800</output></td>
+					</tr>
+					<tr>
+						<td class="info min" title="How much water the recipe calls for">
+							Water Mass
+						</td>
+						<td><input type="number" size="2" min="0" value="620" /></td>
+						<td></td>
+						<td><output>660</output></td>
+					</tr>
+				</table>
+			</form>
 		</main>
 		<div class="nav">
 			<a href="https://github.com/EmilyBonar/Sourdough-Calculator" class="badge"
