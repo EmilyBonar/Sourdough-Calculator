@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/Sourdough-Calculator"
-  to = "sourdoughcalc.netlify.app"
+  to = "https://sourdoughcalc.netlify.app"
   status = 200
   force = true
