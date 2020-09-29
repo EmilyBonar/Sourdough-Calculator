@@ -109,4 +109,24 @@ a:visited:not(.badge) {
 
 .min {
 	width: 24%;
+	cursor: help;
+	position: relative;
+}
+
+[data-title]::after {
+	content: attr(data-title);
+	position: absolute;
+	visibility: hidden;
+	background-color: white;
+	border: 1px solid #020611;
+	border-radius: 5px;
+	padding: 5px;
+	bottom: 40px;
+	left: 0px;
+	width: 240px;
+	z-index: 10;
+}
+
+[data-title]:hover::after {
+	visibility: visible;
 }
