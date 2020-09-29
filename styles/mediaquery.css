@@ -1,4 +1,4 @@
-@media screen and (width < 600px) {
+@media screen and (max-width: 600px) {
 	output,
 	input,
 	label {
@@ -20,5 +20,11 @@
 	}
 	.min {
 		padding-left: 25px;
+	}
+
+	input {
+		width: 100%;
+		min-width: 60px;
+		max-width: 120px;
 	}
 }
