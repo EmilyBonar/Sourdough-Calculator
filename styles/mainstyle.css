@@ -20,7 +20,7 @@ main {
 	margin: auto;
 	padding: 0 20px;
 	width: 35%;
-	min-width: 500px;
+	min-width: 550px;
 	background: white;
 	border-radius: 10px;
 	min-height: 50vh;
@@ -38,6 +38,13 @@ table {
 
 th {
 	text-align: center;
+}
+
+td:nth-child(3) {
+	text-align: left;
+}
+td:nth-child(5) {
+	text-align: left;
 }
 
 output {
@@ -69,6 +76,21 @@ label {
 
 a:visited:not(.badge) {
 	color: blue;
+}
+
+h2 {
+	text-align: center;
+}
+
+.starter {
+	display: flex;
+	flex-flow: row nowrap;
+	margin-bottom: 30px;
+}
+
+.starter > input {
+	width: auto;
+	flex: 1 1 20%;
 }
 
 .nav {

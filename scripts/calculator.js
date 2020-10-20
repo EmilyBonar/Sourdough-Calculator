@@ -1,17 +1,23 @@
 const inputs = document.querySelectorAll("input");
 const outputs = document.querySelectorAll("output");
 
+backCalc();
 calc();
 
 const form = document.querySelector("form");
 form.addEventListener("input", (e) => {
+	if (e.target.parentNode.className == "starter") {
+		starterHydrationCalc();
+	} else if ([...e.target.classList].includes("percent")) {
+		backCalc();
+	}
+	console.log([...e.target.classList]);
 	calc();
 });
 
 function calc() {
-	const hydration = [inputs[0].value / 100, inputs[1].value / 100];
-	const masses = [inputs[2].value, inputs[3].value, inputs[4].value];
-
+	const hydration = [inputs[2].value / 100, inputs[3].value / 100];
+	const masses = [inputs[4].value, inputs[5].value, inputs[6].value];
 	outputs[0].innerHTML = Math.round(
 		(masses[0] / (hydration[0] + 1)) * (hydration[1] + 1),
 	);
@@ -20,4 +26,18 @@ function calc() {
 		masses[2] -
 			((hydration[1] - hydration[0]) * masses[0]) / (hydration[0] + 1),
 	);
+	console.log("test");
+}
+
+function starterHydrationCalc() {
+	const starterHydration = [inputs[0], inputs[1]];
+	inputs[3].value = Math.round(
+		(starterHydration[1].valueAsNumber / starterHydration[0].valueAsNumber) *
+			100,
+	);
+}
+
+function backCalc() {
+	inputs[0].value = "100";
+	inputs[1].value = inputs[3].value;
 }

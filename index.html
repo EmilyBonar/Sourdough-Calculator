@@ -30,14 +30,19 @@
 			<h1>Sourdough Calculator</h1>
 		</header>
 		<main>
-			<p>
-				Like a lot of people, I made a sourdough starter during COVID-19. When I
-				went to bake with it, I ran into recipes that called for starters of
-				different stiffness, or flour/water ratio. This app caluclates the
-				amount of flour, water, and starter to use in a recipe depending on your
-				starter's hydration level and what the recipe calls for.
-			</p>
 			<form action="">
+				<h2>How much do you feed your starter?</h2>
+				<div class="starter">
+					<input type="number" class="flour" id="" size="1" /><label
+						for="percent"
+						>g flour,&nbsp;
+					</label>
+					<input type="number" class="water" id="" size="1" /><label
+						for="percent"
+						>g water</label
+					>
+				</div>
+				<h2>Convert a recipe to use a different starter hydration</h2>
 				<table>
 					<th></th>
 					<th>Original Recipe</th>
@@ -50,13 +55,13 @@
 						>
 							Starter Hydration
 						</td>
-						<td class="percent">
+						<td>
 							<input
 								id="percent"
 								type="number"
 								size="1"
 								min="0"
-								max="100"
+								max="200"
 								value="80"
 							/>
 						</td>
@@ -65,9 +70,10 @@
 							<input
 								id="percent"
 								type="number"
+								class="percent Starter Hydration"
 								size="1"
 								min="0"
-								max="100"
+								max="200"
 								value="60"
 							/>
 						</td>
@@ -80,9 +86,12 @@
 						>
 							Starter Mass
 						</td>
-						<td><input type="number" size="1" min="0" value="360" /></td>
-						<td></td>
-						<td><output>320</output></td>
+						<td>
+							<input id="mass" type="number" size="1" min="0" value="360" />
+						</td>
+						<td><label for="mass">g</label></td>
+						<td><output id="output">320</output></td>
+						<td><label for="output">g</label></td>
 					</tr>
 					<tr>
 						<td
@@ -91,9 +100,12 @@
 						>
 							Flour Mass
 						</td>
-						<td><input type="number" size="1" min="0" value="800" /></td>
-						<td></td>
-						<td><output>800</output></td>
+						<td>
+							<input id="mass" type="number" size="1" min="0" value="800" />
+						</td>
+						<td><label for="mass">g</label></td>
+						<td><output id="output">800</output></td>
+						<td><label for="output">g</label></td>
 					</tr>
 					<tr>
 						<td
@@ -102,9 +114,12 @@
 						>
 							Water Mass
 						</td>
-						<td><input type="number" size="1" min="0" value="620" /></td>
-						<td></td>
-						<td><output>660</output></td>
+						<td>
+							<input id="mass" type="number" size="1" min="0" value="620" />
+						</td>
+						<td><label for="mass">g</label></td>
+						<td><output id="output">660</output></td>
+						<td><label for="output">g</label></td>
 					</tr>
 				</table>
 			</form>
