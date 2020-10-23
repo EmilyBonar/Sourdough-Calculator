@@ -1,5 +1,6 @@
 const inputs = document.querySelectorAll("input");
 const outputs = document.querySelectorAll("output");
+const starterFeeding = document.querySelector(".starter-container");
 
 backCalc();
 calc();
@@ -13,6 +14,11 @@ form.addEventListener("input", (e) => {
 	}
 	console.log([...e.target.classList]);
 	calc();
+});
+
+inputs[3].addEventListener("click", (e) => {
+	starterFeeding.classList.toggle("invisible");
+	console.log("click");
 });
 
 function calc() {

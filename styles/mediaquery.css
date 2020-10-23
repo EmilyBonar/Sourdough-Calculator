@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
 	output,
 	input,
 	label {
@@ -10,7 +10,7 @@
 	main {
 		width: 95%;
 		min-width: 50px;
-		min-height: 40vh;
+		min-height: 30vh;
 		margin: auto;
 		padding: 5px;
 	}
@@ -26,5 +26,13 @@
 		width: 100%;
 		min-width: 60px;
 		max-width: 120px;
+	}
+
+	.starter-container {
+		top: 10%;
+		max-height: -webkit-min-content;
+		max-height: -moz-min-content;
+		max-height: min-content;
+		min-width: 90%;
 	}
 }
